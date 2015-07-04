@@ -16,6 +16,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
     
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+      <link href='assets/css/half-slider.css' rel="stylesheet">
     
       <!-- Custom Fonts -->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -89,8 +90,32 @@
             </header>
       </div>
 
-	<section id="resume" name="resume"></section>
-	<!--EDUCATION DESCRIPTION -->
+	<div class="container">
+        <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" ><img src="assets/img/cv1.jpg"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" ><img src="assets/img/cv2.jpg"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            
+        </div>
+    </header>  
+      </div>
 	<div class="container desc">
 		<div class="row">
 
@@ -133,4 +158,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/bootstrap.js"></script>
   </body>
+    <script>
+    $('.carousel').carousel({
+        interval: 3000 //changes the speed
+    })
+    </script>
 </html>
