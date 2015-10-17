@@ -88,31 +88,62 @@
                 </p>
             </div>
             <div class="col-lg-3">
-                <img src="assets/img/principle.jpg" width="100%">
-                <p><br><t>Principle</t><br>
-                    Mr.R.A.C.S.Ranaweera
-                    
+                <img src="assets/img/principle.jpg" width="100%" style="border-radius:5px;">
+                <p><br><t>Principle - </t>
+                    Mr.R.A.C.S.Ranaweera                    
                 </p>
+                <hr>
+                <div class="col-lg-12" id="skillswrap" style="padding:20px">
+                    <b>Grade 5 - 2015</b><hr>
+                    Number attended - <b>91</b><br>
+                    Number passed - <b>20</b><br>
+                    Passed percentage - <b>21.97%</b>
+                </div>
             </div>
             <div class="col-lg-4"><hr>
                 <p><t>-- Vision --</t><br>
                     ” සමතුලිත පෞරුෂයකින් යුත් අනාගත ලෝකයට ගැලපෙන දරු පිරිසක් ”
-                </p><hr>
+                </p>
             </div>
             <div class="col-lg-8"><hr>
                 <p><t>-- Mission --</t><br>
                     “ ජාතික අධ්‍යාපන අරමුණු අනුව පූර්ණ් විෂය මාලාව ක්‍රියාත්මක කිරීමෙන් දරුවන්ගේ සහජ කුසලතා උපරිමයට වර්ධනය කරමින් සමාජ විරෝධී ක්‍රියවන්ගෙන් වැලකී අන්‍ය සංස්කෘතීන්ට ගරු කරන සාරධර්ම අගයන දරු පිරිසක් බිහි කිරීම සඳය්ඩ් උපරිමයෙන් කැපවීම ”
-                </p><hr>
+                </p>
             </div>
 		</div><!--/.row -->
-		
+		<div class="row">
+            <div class="col-lg-12 text-center" id="skillswrap" style="padding:5px;border-radius:3px">
+                <b>Latest Achivments of our Students'</b>
+            </div>
+            <div class='col-lg-4' style='margin-top:10px;border-left:2px solid #ffa5c5;'>
+                <t>Grade 4 - funny activities</t><br>
+                <p>
+                    first place in zonel education
+                </p>
+            </div>
+            <div class='col-lg-4' style='margin-top:10px;border-left:2px solid #ffa5c5;'>
+                <t>St Jhon - KITI cadet day</t><br>
+                <p>
+                    the best team of the kegalle zone
+                </p>
+            </div>
+            <div class='col-lg-4' style='margin-top:10px;border-left:2px solid #ffa5c5;'>
+                <t>Galigamuwa Zone - Sport Meet</t><br>
+                <p>
+                    SPRW Senadhira - firstplace 100m<br>
+                    RN Kaweesha Rathnayaka - 1st place 100m<br>
+                    MPAA Manikpura - 3rd place - High Jump
+                </p>
+            </div>
+          
+        </div>
 	</div><!--/.container -->
 	
 	
 	
 
     <!--SKILLS DESCRIPTION -->
-	<div id="skillswrap" style="padding-bottom:5px;">
+	<div id="skillswrap" style="padding-bottom:5px;margin-top:20px">
 		<div class="container">
             <div class="row">
                 <div class="col-lg-6">

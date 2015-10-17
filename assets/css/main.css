@@ -282,3 +282,11 @@ a:after {
 sm {
 	font-size: 12px;
 }
+
+.btn{
+    background-color:  #7d0d35;
+    border-radius: 3px;
+    padding: 5px;
+    color:#fff;
+    font-size:12px;
+}
