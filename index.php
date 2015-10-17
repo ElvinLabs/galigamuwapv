@@ -33,60 +33,9 @@
 
   <body data-spy="scroll" data-offset="0" data-target="#nav">
 
-    <div id="intro" style="padding:5px">
-        <div class="container">
-        </div>
-	</div><!--/ #intro -->
-       
-	<section id="about" name="about"></section>
-      
-	
-    <div class="container">
-        <img src="assets/img/banner.jpg" width="100%">
-    </div><!--/.container -->
-	
-      <div class="container">
-            <header class="navbar navbar-inverse  bs-docs-nav" role="banner">
-              <div class="container">
-                <div class="navbar-header">
-                  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                  <ul class="nav navbar-nav">
-                      <li class="active">
-                        <a href="#" >Home</a>
-                      </li>
-                      <li>
-                        <a href="#">History</a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Life at School<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Acivments</a></li>
-                          <li><a href="#">Sprots</a></li>
-                          <li><a href="#">Prefects</a></li>
-                          <li><a href="#">Kiti</a></li>
-                        </ul>
-                      </li>
-                    <li>
-                      <a href="#">News</a>
-                    </li>
-                    <li>
-                      <a href="#">Our Notice Board</a>
-                    </li>
-                    <li >
-                      <a href="#">Contact Us</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </header>
-      </div>
+    <?php
+        include "nav.html"
+    ?>
 
 	<div class="container" style="margin-top:-20px">
         <header id="myCarousel" class="carousel slide">
@@ -132,7 +81,7 @@
 		<div class="row">
             <div class="col-lg-9">
                 <p>
-                    Kegalu Vidyalaya is a leading national school in Sri Lanka, which was established on <t>14th of February 1942</t>. It is one of the pioneer Buddhist schools in Sabaragamuwa province. It was started as a higher Buddhist school in Kegalle under the patronage of Mr. A. F. Molamure, Dr. G. P. Malalasekara and P. De S. Kularathna. A notice was issued by the principal of Ananda College Colombo starting that “Kegalle Higher Buddhist English School will be opened by 14th of February 1942 as a branch of Ananda College Colombo. The first principal of the school was Mr. K. L. V. Mendis.
+                    Galigamuwa Primary School is a leading primary school in Kegalle, Sri Lanka, which was established on <t>14th of February 1942</t>. It is one of the pioneer Buddhist schools in Sabaragamuwa province. It was started as a higher Buddhist school in Kegalle under the patronage of Mr. A. F. Molamure, Dr. G. P. Malalasekara and P. De S. Kularathna. A notice was issued by the principal of Ananda College Colombo starting that “Kegalle Higher Buddhist English School will be opened by 14th of February 1942 as a branch of Ananda College Colombo. The first principal of the school was Mr. K. L. V. Mendis.
 <br><br>
 The school is located at heart of Kegalle town around an aesthetic background at mountainous area. The convenient location of the college makes it quite popular in the island. About 3,200 students who are admitted from grade 1 and scholarship examination fulfil their education from grade 6 to 13. Today Kegalu Vidyalaya is stepping to a glorious era being enlisted as one of the best four schools in Kegalle district in Sabaragamuwa province which was produced excellent results in G. C. E. O/L examination and G. C. E. A/L examination under the patronage of present principal Mr. W. M. Dharmapala. The dedicated principals, vice principals, the academic staff and the studious and keen students are the direct cause for the rapid development of the standard of education of the college. Even the non-academic staff equally contributes to uplift the standard of the college.
                 </p>
@@ -140,7 +89,7 @@ The school is located at heart of Kegalle town around an aesthetic background at
             <div class="col-lg-3">
                 <img src="assets/img/principle.jpg" width="100%">
                 <p><br><t>Principle</t><br>
-                    Mr.sdsdsdsdsdsdsdsdsd
+                    Mr.R.A.C.S.Ranaweera
                     
                 </p>
             </div>
