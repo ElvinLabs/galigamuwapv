@@ -81,9 +81,10 @@
 		<div class="row">
             <div class="col-lg-9">
                 <p>
-                    Galigamuwa Primary School is a leading primary school in Kegalle, Sri Lanka, which was established on <t>14th of February 1942</t>. It is one of the pioneer Buddhist schools in Sabaragamuwa province. It was started as a higher Buddhist school in Kegalle under the patronage of Mr. A. F. Molamure, Dr. G. P. Malalasekara and P. De S. Kularathna. A notice was issued by the principal of Ananda College Colombo starting that “Kegalle Higher Buddhist English School will be opened by 14th of February 1942 as a branch of Ananda College Colombo. The first principal of the school was Mr. K. L. V. Mendis.
-<br><br>
-The school is located at heart of Kegalle town around an aesthetic background at mountainous area. The convenient location of the college makes it quite popular in the island. About 3,200 students who are admitted from grade 1 and scholarship examination fulfil their education from grade 6 to 13. Today Kegalu Vidyalaya is stepping to a glorious era being enlisted as one of the best four schools in Kegalle district in Sabaragamuwa province which was produced excellent results in G. C. E. O/L examination and G. C. E. A/L examination under the patronage of present principal Mr. W. M. Dharmapala. The dedicated principals, vice principals, the academic staff and the studious and keen students are the direct cause for the rapid development of the standard of education of the college. Even the non-academic staff equally contributes to uplift the standard of the college.
+                     Bordering to the Colombo Kandy main road in Galigamuwa town area, situated the Kg/Galigamuwa primary school as one of the leading school for primary education in Kegalle district.<br><br>
+                The school was established around the first decade of 19th century, named as Kg/ Ballapana Kanishta Vidyalaya (consisted of both primary and secondary classes) By that time the school was under religious missionaries as a catholic school. Later in 1987 the school was re-named as Kg/Galigamuwa Primary School. Since then the school was took a great step forward re-writing it’s history as a Primary School. It was Madam Vimala Kannangara who took the initial step to change the name of the school as Kg/galigamuwa primary school.<br><br>
+      Today Galigamuwa primary school caters around 500 students in five grades of primary education. The commitment of the present principal, staff and past principals teachers and parents have elevated the school in a great level day by day.
+
                 </p>
             </div>
             <div class="col-lg-3">
@@ -94,12 +95,12 @@ The school is located at heart of Kegalle town around an aesthetic background at
                 </p>
             </div>
             <div class="col-lg-4"><hr>
-                <p><t><i class="icon-asterisk"></i> Vision</t><br>
+                <p><t>-- Vision --</t><br>
                     ” සමතුලිත පෞරුෂයකින් යුත් අනාගත ලෝකයට ගැලපෙන දරු පිරිසක් ”
                 </p><hr>
             </div>
             <div class="col-lg-8"><hr>
-                <p><t><i class="icon-asterisk"></i> Mission</t><br>
+                <p><t>-- Mission --</t><br>
                     “ ජාතික අධ්‍යාපන අරමුණු අනුව පූර්ණ් විෂය මාලාව ක්‍රියාත්මක කිරීමෙන් දරුවන්ගේ සහජ කුසලතා උපරිමයට වර්ධනය කරමින් සමාජ විරෝධී ක්‍රියවන්ගෙන් වැලකී අන්‍ය සංස්කෘතීන්ට ගරු කරන සාරධර්ම අගයන දරු පිරිසක් බිහි කිරීම සඳය්ඩ් උපරිමයෙන් කැපවීම ”
                 </p><hr>
             </div>
