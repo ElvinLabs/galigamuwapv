@@ -39,24 +39,62 @@
 	<div class="container desc" style="margin-bottom:30px">
 		<div class="row">
              <div class="col-lg-12 text-center"><t>Details of Past Principls</t><hr></div>
-            <div class='col-lg-3' style='margin-top:10px;'>
-                <img src="../assets/img/principle.jpg" width="100%" style="border-radius:5px;">
-                <p class="text-center"><br><t>Mr.R.A.C.S.Ranaweera</t><br>
-                2012-current                        
-                </p>
+            <div class="col-lg-12">
+            <p></t>Galigamuwa Primary School was first established in about 1900. This was first considered as a upakrutha school and, from the day of 01st April 1962 this was arrogated to the government under the name of Ballapana Roman Catholic College. At that time there were 262 students and 10 teachers. On 16th March 1964, this school was re-organized with the Medagodalanda College. </p>
             </div>
-            <div class='col-lg-3' style='margin-top:10px;'>
-                <img src="../assets/img/principle.jpg" width="100%" style="border-radius:5px;">
-                <p class="text-center"><br><t>Mr.R.A.C.S.Ranaweera</t><br>
-                2012-current                        
-                </p>
-            </div>
-            <div class='col-lg-3' style='margin-top:10px;'>
-                <img src="../assets/img/principle.jpg" width="100%" style="border-radius:5px;">
-                <p class="text-center"><br><t>Mr.R.A.C.S.Ranaweera</t><br>
-                2012-current                        
-                </p>
-            </div>
+             <div class="col-lg-12">
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="col-lg-12" id="skillswrap" style='padding:5px;border-left:2px solid #ffa5c5;'>
+                            <b>Name       </b>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="col-lg-12" id="skillswrap" style='padding:5px;border-left:2px solid #ffa5c5;'>
+                            <b>From</b>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="col-lg-12" id="skillswrap" style='padding:5px;border-left:2px solid #ffa5c5;'>
+                            <b>To</b>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-12" style="margin:5px">
+                    <div class="col-lg-6 col-xs-12">
+                            <b>Hector M Fernando</b>
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            at the begining
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            1963-03-13
+                    </div>
+                    </div>
+                <div class="col-lg-12" style="margin:5px">
+                    <div class="col-lg-6 col-xs-12">
+                            <b>H.F. Kothalawala</b>
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            1968-01-01 
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            1970-07-09
+                    </div>
+                    </div>
+                <div class="col-lg-12" style="margin:5px">
+                    <div class="col-lg-6 col-xs-12">
+                            <b>H.F. Kothalawala</b>
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            1968-01-01 
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            1970-07-09
+                    </div>
+                    </div>
+            
             
 		</div><!--/.row -->		
 	</div><!--/.container -->
