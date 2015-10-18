@@ -48,17 +48,17 @@
             <div class="col-lg-6 col-sm-12">
                 <div class="form-group">
                     <label>Name</label>
-                    <input class="form-control" type="text" name="year" value="" placeholder="eg: 2010" required>
+                    <input class="form-control" type="text" name="name" value="" required>
                 </div>  
                 <div class="form-group">
                     <label>From</label>
-                    <input class="form-control" type="number" name="amount" value="" placeholder="eg: 100" required>
+                    <input class="form-control" type="date" name="str_date" value="" placeholder="eg: 2010" required>
                 </div>
             </div>
                 <div class="col-lg-6 col-sm-12">
                 <div class="form-group">
                     <label>To</label>
-                    <input class="form-control" type="number" name="pass" value="" placeholder="eg:20" required>
+                    <input class="form-control" type="date" name="end_date" value="" placeholder="eg:2012" required>
                 </div>
                 <div class="form-group">
                     <input class="form-control" type="submit" value="Add">
@@ -91,22 +91,14 @@
            
         require '../db/db_connect.php';
         $conn = connection();
-        //if($conn) echo "connected";
-        //else echo "error";
-
-        if($_POST){
-        
-        
-            
-            $year =isset( $_POST['year']) ? $_POST['year'] : 2000;
-            $amount =isset( $_POST['amount']) ? $_POST['amount'] : 100;
-            $pass =isset( $_POST['pass']) ? $_POST['pass'] : 0;
-            $percentage =isset( $_POST['precentage']) ? $_POST['precentage'] : 0.00;
-            
-            $query = "INSERT INTO EXAM_MARKS(Exam_yr,Amount,Pass,percentage) VALUES('$year','$amount','$pass','$percentage')";
-            
+        if($_POST){     
+            $name =isset( $_POST['name']) ? $_POST['name'] : "";
+            $str_date =isset( $_POST['str_date']) ? $_POST['str_date'] : 2010;
+            $end_date =isset( $_POST['end_date']) ? $_POST['end_date'] : 2012;
+//            $percentage =isset( $_POST['precentage']) ? $_POST['precentage'] : 0.00;       
+            $query = "INSERT INTO Principles(Name,Start_date,End_date) VALUES('$name','$str_date','$end_date')";         
             if($conn->query($query)){
-                //echo "added";
+                echo "added";
             }else echo $conn->error;
             
             
