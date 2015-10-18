@@ -15,7 +15,10 @@ CREATE TABLE EXAM_MARKS(
 
 CREATE TABLE Galary(
     Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    Name varchar(256)
+    Name VARCHAR(256),
+    Add_date DATE,
+    Des BLOB,
+    Img_name VARCHAR(256) NOT NULL
 );
 
 
@@ -39,6 +42,7 @@ CREATE TABLE Slider(
 /* notice bord*/
 CREATE TABLE Notice_Bord(
     Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Title VARCHAR(256) NOT NULL,
     Img_name VARCHAR(256) NOT NULL,
     Description BLOB NOT NULL,
     Name VARCHAR(256) NOT NULL,
@@ -59,10 +63,8 @@ CREATE TABLE News(
 CREATE TABLE Principles(
     Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     Name VARCHAR(256) NOT NULL,
-    Image VARCHAR(256) NOT NULL,
     Start_date DATE NOT NULL,
-    End_date DATE NOT NULL,
-    Type ENUM('PAST','CURRUNT') DEFAULT 'PAST'
+    End_date DATE NOT NULL   
 );
 
 

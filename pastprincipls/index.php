@@ -60,29 +60,40 @@
                     </div>
                     </div>
                 </div>
-                <?php  
-                    require '../admin/db/db_connect.php';                    
-                    $query_auto = "SELECT * FROM principles";
-                    $conn = connection();
-                    $result = $conn->query($query_auto);
-                    if( $result->num_rows > 0){
-                        while( $row = $result->fetch_assoc() ){
-                ?> 
+    
                 <div class="col-lg-12" style="margin:5px">
                     <div class="col-lg-6 col-xs-12">
-                            <b><?php echo ($row['Name']);  ?></b>
+                            <b>Hector M Fernando</b>
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                            <?php echo ($row['Start_date']);  ?>
+                            at the begining
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                            <?php echo ($row['End_date']);  ?>
+                            1963-03-13
                     </div>
                     </div>
-                <?php
-                        }                                   
-                    }else  echo $conn->error;
-                ?>
+                <div class="col-lg-12" style="margin:5px">
+                    <div class="col-lg-6 col-xs-12">
+                            <b>H.F. Kothalawala</b>
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            1968-01-01 
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            1970-07-09
+                    </div>
+                    </div>
+                <div class="col-lg-12" style="margin:5px">
+                    <div class="col-lg-6 col-xs-12">
+                            <b>H.F. Kothalawala</b>
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            1968-01-01 
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            1970-07-09
+                    </div>
+                    </div>
             
             
 		</div><!--/.row -->		
