@@ -64,7 +64,7 @@
                     </div>
                 <div class="form-group">
                     <label>Upload Images</label>
-                    <input type="file"  name="files[]" id="imgid" multiple/ >
+                    <input type="file"  name="files" id="imgid" multiple/ >
                     <img src="#" alt="your image" id="image" style="width:100px;height:100px;">   
                 </div></div><div class="col-lg-6 col-sm-12">
                 <div class="form-group">
@@ -95,13 +95,11 @@
     <?php 
 
            
-        require '../db/db_connect.php';
-        $conn = connection();
-        if($conn) echo "connected";
-        else echo "error";
 
         if($_POST){
         
+            require '../db/db_connect.php';
+            $conn = connection();
         
             
             $title     =isset( $_POST['title']) ? $_POST['title'] : "";
@@ -112,42 +110,20 @@
             
             $image = "";
              if(isset($_FILES['files'] )){  
-                $file_name = create_file_name();
+    
                 $files = $_FILES['files'];
-                $dir = '../../noticebord/img/'.$file_name;
-                $image = save_img($files,$dir,$file_name);
+                $dir = '../../noticebord/img/';
+                $image = image_save($dir,$files);
              
              }
-                echo $image;
             
             $query = "INSERT INTO Notice_Bord(Title,Img_name,Description,Name,Grade,Added_date) VALUES('$title','$image','$des','$name','$grade','$date')";
             
                 if($conn->query($query)){
                     echo "added";
                 }else echo $conn->error;
-            
-            
-//            
-            
-            
+               
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     ?>
