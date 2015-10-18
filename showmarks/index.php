@@ -64,20 +64,33 @@
                             </div>
                 </div>
                 
-                <div class="col-lg-12">
-                            <div class="col-lg-3 col-xs-3" style="margin-top:15px">
-                                    <b>2009</b>
-                            </div>
-                            <div class="col-lg-3 col-xs-3" style="margin-top:15px">
-                                    <b>82</b>
-                            </div>
-                            <div class="col-lg-3 col-xs-3" style="margin-top:15px">
-                                    <b>10</b>
-                            </div>
-                            <div class="col-lg-3 col-xs-3" style="margin-top:15px">
-                                    <b>12.19</b>
-                            </div>
-                </div>
+                <?php  
+                    require '../admin/db/db_connect.php';                    
+                    $query_auto = "SELECT * FROM exam_marks";
+                    $conn = connection();
+                    $result = $conn->query($query_auto);
+                    if( $result->num_rows > 0){
+                        while( $row = $result->fetch_assoc() ){
+                ?>  
+                        <div class="col-lg-12">
+                                    <div class="col-lg-3 col-xs-3" style="margin-top:15px">
+                                            <b><?php echo ($row['Exam_yr']);  ?></b>
+                                    </div>
+                                    <div class="col-lg-3 col-xs-3" style="margin-top:15px">
+                                            <b><?php echo ($row['Amount']);  ?></b>
+                                    </div>
+                                    <div class="col-lg-3 col-xs-3" style="margin-top:15px">
+                                            <b><?php echo ($row['Pass']);  ?></b>
+                                    </div>
+                                    <div class="col-lg-3 col-xs-3" style="margin-top:15px">
+                                            <b><?php echo ($row['Percentage']);  ?></b>
+                                    </div>
+                        </div>
+
+                 <?php
+                        }                                   
+                    }else  echo $conn->error;
+                ?>
                 
             </div>
       </div>
