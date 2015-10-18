@@ -38,12 +38,26 @@
       
 	<div class="container desc" style="margin-bottom:30px">
 		<div class="row">
-            <script>  
-                for (i=1; i<=31; i++) {  
-                    document.write(
-                        "<div class='col-lg-3' style='margin-top:10px;'><img src='../assets/img/galary/img%20("+i+").jpg' width='100%'></div>")  
-                }  
-            </script> 
+             <div class="col-lg-12 text-center"><t>Details of Past Principls</t><hr></div>
+            <div class='col-lg-3' style='margin-top:10px;'>
+                <img src="../assets/img/principle.jpg" width="100%" style="border-radius:5px;">
+                <p class="text-center"><br><t>Mr.R.A.C.S.Ranaweera</t><br>
+                2012-current                        
+                </p>
+            </div>
+            <div class='col-lg-3' style='margin-top:10px;'>
+                <img src="../assets/img/principle.jpg" width="100%" style="border-radius:5px;">
+                <p class="text-center"><br><t>Mr.R.A.C.S.Ranaweera</t><br>
+                2012-current                        
+                </p>
+            </div>
+            <div class='col-lg-3' style='margin-top:10px;'>
+                <img src="../assets/img/principle.jpg" width="100%" style="border-radius:5px;">
+                <p class="text-center"><br><t>Mr.R.A.C.S.Ranaweera</t><br>
+                2012-current                        
+                </p>
+            </div>
+            
 		</div><!--/.row -->		
 	</div><!--/.container -->
 	
@@ -52,7 +66,7 @@
 
     <?php
         include "../footer.html"
-    ?>	
+    ?>
 	
 
     <!-- Bootstrap core JavaScript

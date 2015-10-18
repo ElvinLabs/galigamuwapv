@@ -5,28 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
 
     <title>Galigamuwa Primary School, Kegalle</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
     
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-      <link href='assets/css/half-slider.css' rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+      <link href='../assets/css/half-slider.css' rel="stylesheet">
     
       <!-- Custom Fonts -->
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
       
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <script src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
-    <script src="assets/js/Chart.js"></script>
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <script src="../assets/js/jquery.min.js"></script>
+    <script type="../text/javascript" src="assets/js/smoothscroll.js"></script> 
+    <script src="../assets/js/Chart.js"></script>
       
    
   </head>
@@ -34,7 +33,7 @@
   <body data-spy="scroll" data-offset="0" data-target="#nav">
 
     <?php
-        include "nav.html"
+        include "../nav.html"
     ?>
       <div class="container desc">
             <div class="row">
@@ -52,13 +51,13 @@
       </div>
 	<div class="col-lg-12" style="margin:20px"></div>
       <?php
-        include "footer.html"
+        include "../footer.html"
     ?>
       
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
   </body>
     <script>
     $('.carousel').carousel({

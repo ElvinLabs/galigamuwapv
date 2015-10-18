@@ -38,22 +38,19 @@
       
 	<div class="container desc" style="margin-bottom:30px">
 		<div class="row">
-            <script>  
-                for (i=1; i<=31; i++) {  
-                    document.write(
-                        "<div class='col-lg-3' style='margin-top:10px;'><img src='../assets/img/galary/img%20("+i+").jpg' width='100%'></div>")  
-                }  
-            </script> 
+            <div class="col-lg-12">
+                <div class="text-center"><t>Our School Prefect Team</t><br><br></div>
+                <img src="../assets/img/galary/prefect.jpg" width="100%">
+            </div>
 		</div><!--/.row -->		
 	</div><!--/.container -->
 	
 	
 	
 
-    <?php
+   <?php
         include "../footer.html"
-    ?>	
-	
+    ?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

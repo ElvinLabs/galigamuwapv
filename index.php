@@ -34,7 +34,7 @@
   <body data-spy="scroll" data-offset="0" data-target="#nav">
 
     <?php
-        include "nav.html"
+        include "navindex.html"
     ?>
 
 	<div class="container" style="margin-top:-20px">
@@ -142,42 +142,9 @@
 	
 	
 
-    <!--SKILLS DESCRIPTION -->
-	<div id="skillswrap" style="padding-bottom:5px;margin-top:20px">
-		<div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <p>
-                        <b>Kg/Ga Galigamuwa Primary School</b><br>
-                        Galigamuwa,<br>
-                        Kegalle.
-                    </p>
-                    
-                </div>
-				<div class="col-lg-6">
-                    <p>
-                        <i class="icon-phone"></i>035-22-22222<br>
-                        galigamuwapv@gmail.com<br>
-                    </p>
-                    
-                </div>
-	           
-		      </div><!--/.row -->			
-		</div><!--/.container -->        
-	</div><!--/ #skillswrap -->
-
-    
-<div class="text-right" style="background-color:#111">
-            <div class="container row">
-                <div class="col-lg-12" >
-                    <p style="font-size:12px">designed by - ElvinLabs</p>
-                </div>
-            </div>
-        </div>
-	
-	
-	
-	
+    <?php
+        include "footer.html"
+    ?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
