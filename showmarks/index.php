@@ -35,6 +35,9 @@
     <?php
         include "../nav.html"
     ?>
+      <div class="container" style="margin-top:-20px">
+        <div class="row"><div class="col-lg-12"><img src="header.jpg" width="100%"> </div> </div>
+      </div>
       <div class="container desc">
             <div class="row">
                 <div class="col-lg-12 text-center"><t>Overall Result Analysis – Grade 5 Scholarship</t><hr></div>
@@ -78,7 +81,7 @@
                 
             </div>
       </div>
-	<div class="col-lg-12" style="margin:20px"></div>
+	
       <?php
         include "../footer.html"
     ?>
