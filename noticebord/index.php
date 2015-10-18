@@ -39,32 +39,43 @@
         <div class="row"><div class="col-lg-12"><img src="header.jpg" width="100%"> </div> </div>
       </div>
 	<div class="container desc">
+        
 		<div class="row">
             
             <?php  
                     require '../admin/db/db_connect.php';                    
-                    $query_auto = "SELECT * FROM achivements";
+                    $query_auto = "SELECT * FROM notice_bord";
                     $conn = connection();
                     $result = $conn->query($query_auto);
                     if( $result->num_rows > 0){
                         while( $row = $result->fetch_assoc() ){
                 ?>
             
-            <div class="col-lg-12" id="skillswrap" style="padding:5px;border-radius:3px">
+        <div class="col-lg-12" id="skillswrap" style="padding:5px;border-radius:3px;margin-top:20px;">
                 <b><?php echo ($row['Title']);  ?></b>
-                <q class="pull-right"><?php echo ($row['A_date']);  ?></q>
             </div>
-            <div class='col-lg-12' style='margin-top:10px;border-left:2px solid #ffa5c5;'>
-                <p>
-                    <?php echo ($row['Description']);  ?>
-                </p>
+            <div class='col-lg-12' style='margin-top:10px;'>
+                <div class="row">
+                    <div class="col-lg-8 col-xs-12">
+                        <img src="<?php echo ($row['Img_name']);  ?>" width="100%">
+                    </div>
+                    <div class="col-lg-4 col-xs-12">
+                        <p>
+                            <b>Name -</b><?php echo ($row['Name']);  ?><br>
+                            <b>Grade -</b><?php echo ($row['Grade']);  ?><br>
+                            <b>Date -</b><?php echo ($row['Added_date']);  ?><br>
+                            <?php echo ($row['Description']);  ?>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <?php
+        
+        <?php
                         }                                   
                     }else  echo $conn->error;
                 ?>
             
-            
+   
           
         </div>
 	</div><!--/.container -->

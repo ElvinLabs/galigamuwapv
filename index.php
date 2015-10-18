@@ -127,6 +127,7 @@
                 </p>
             </div>
 		</div><!--/.row -->
+<!--
 		<div class="row">
             <div class="col-lg-12 text-center" id="skillswrap" style="padding:5px;border-radius:3px">
                 <b>News Feed</b>
@@ -153,6 +154,7 @@
             </div>
           
         </div>
+-->
 	</div><!--/.container -->
 	
 	
