@@ -1,11 +1,4 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['admin']))
-    {
-        header("Location:../login/");
-       // echo $_SESSION['user'];
-    }
-?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
