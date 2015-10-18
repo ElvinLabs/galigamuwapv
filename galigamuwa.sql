@@ -15,7 +15,10 @@ CREATE TABLE EXAM_MARKS(
 
 CREATE TABLE Galary(
     Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    Name varchar(256)
+    Name VARCHAR(256),
+    Add_date DATE,
+    Des BLOB,
+    Img_name VARCHAR(256) NOT NULL
 );
 
 
