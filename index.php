@@ -93,12 +93,28 @@
                     Mr.R.A.C.S.Ranaweera                    
                 </p>
                 <hr>
+                
+                <?php  
+                    require 'admin/db/db_connect.php';                    
+                    $query_auto = "SELECT * FROM  `exam_marks` WHERE  `Exam_yr` = ( SELECT MAX(  `Exam_yr` ) FROM  `exam_marks` )";
+                    $conn = connection();
+                    $result = $conn->query($query_auto);
+                    if( $result->num_rows > 0){
+                        while( $row = $result->fetch_assoc() ){
+                ?> 
+                
                 <div class="col-lg-12" id="skillswrap" style="padding:20px">
-                    <b>Grade 5 - 2015</b><hr>
-                    Number attended - <b>91</b><br>
-                    Number passed - <b>20</b><br>
-                    Passed percentage - <b>21.97%</b>
+                    <b>Grade 5 - <?php echo ($row['Exam_yr']);  ?></b><hr>
+                    Number attended - <b><?php echo ($row['Amount']);  ?></b><br>
+                    Number passed - <b><?php echo ($row['Pass']);  ?></b><br>
+                    Passed percentage - <b><?php echo ($row['Percentage']);  ?> %</b>
                 </div>
+                
+                <?php
+                        }                                   
+                    }else  echo $conn->error;
+                ?>
+                
             </div>
             <div class="col-lg-4"><hr>
                 <p><t>-- Vision --</t><br>
