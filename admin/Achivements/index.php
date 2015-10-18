@@ -24,7 +24,7 @@
       
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../../assets/css/custom.css">
     <script src="../../assets/js/jquery.min.js"></script>
     <script type="../../text/javascript" src="assets/js/smoothscroll.js"></script> 
     <script src="../../assets/js/Chart.js"></script>
@@ -36,18 +36,19 @@
 
     <?php
 
-        include "../../nav.html"
+        include "../nav.html"
     ?>
 
 	<div class="container" style="margin-top:-20px">
       
-        
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+        <div class="col-lg-12 text-center"><t>Add Achivments</t><hr></div>      
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         
         
         
 
-            <form role="form" action="index.php" method="post" enctype="multipart/form-data"  accept-charset="utf-8" >  
+            <form role="form" action="index.php" method="post" enctype="multipart/form-data"  accept-charset="utf-8" > 
+                <div class="col-lg-6 col-sm-12">
                 <div class="form-group">
                     <label>Title</label>
                     <input class="form-control" type="text" name="title" value=""  required>
@@ -56,13 +57,15 @@
                     <label>Date</label>
                     <input class="form-control" type="date" name="date" value="" required>
                 </div>
+                </div> <div class="col-lg-6 col-sm-12">
                 <div class="form-group">
                     <label>Description</label>
-                    <input class="form-control" type="text" name="des" value="" required>
+                    <textarea class="form-control" type="text" name="des" value="" rows="10" required></textarea>
                 </div>
                 
                 <div class="form-group">
                     <input class="form-control" type="submit" value="Add">
+                </div>
                 </div>
             </form>
             
@@ -109,23 +112,6 @@
             
             
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     ?>
