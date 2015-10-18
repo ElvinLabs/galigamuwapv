@@ -39,42 +39,37 @@
 	<div class="container desc">
 		<div class="row">
             
-           
+           <?php  
+                    require '../admin/db/db_connect.php';                    
+                    $query_auto = "SELECT * FROM notice_bord";
+                    $conn = connection();
+                    $result = $conn->query($query_auto);
+                    if( $result->num_rows > 0){
+                        while( $row = $result->fetch_assoc() ){
+                ?>
+            
         <div class="col-lg-12" id="skillswrap" style="padding:5px;border-radius:3px;margin-top:20px;">
-                <b>Kitty Cadet</b>
+                <b><?php echo ($row['Title']);  ?></b>
             </div>
             <div class='col-lg-12' style='margin-top:10px;'>
                 <div class="row">
                     <div class="col-lg-8 col-xs-12">
-                        <img src="kiti.jpg" width="100%">
+                        <img src="<?php echo ($row['C_img']);  ?>" width="100%">
                     </div>
                     <div class="col-lg-4 col-xs-12">
                         <p>
-                            <b>Teacher Incharge -</b> R.S. Ranaweera<hr>
-                            To build up a younger generation for the service of human kind by developing the attitudes skills and values and having the capability to face the challenges, changes and hardship in the day to day life by enabling them to have a total personality is the mission of the kitty program of St.John Ambulance.
+                            <b>Teacher Incharge -</b> <?php echo ($row['Incharge']);  ?><hr>
+                            <?php echo ($row['Description']);  ?>
                         </p>
                     </div>
                 </div>
             </div>
         
-        <div class="col-lg-12" id="skillswrap" style="padding:5px;border-radius:3px;margin-top:20px;">
-                <b>Kitty Cadet</b>
-            </div>
-            <div class='col-lg-12' style='margin-top:10px;'>
-                <div class="row">
-                    <div class="col-lg-8 col-xs-12">
-                        <img src="kiti.jpg" width="100%">
-                    </div>
-                    <div class="col-lg-4 col-xs-12">
-                        <p>
-                            <b>Teacher Incharge -</b> R.S. Ranaweera<hr>
-                            To build up a younger generation for the service of human kind by developing the attitudes skills and values and having the capability to face the challenges, changes and hardship in the day to day life by enabling them to have a total personality is the mission of the kitty program of St.John Ambulance.
-                        </p>
-                    </div>
-                </div>
-            </div>
-      
-   
+        
+    <?php
+                        }                                   
+                    }else  echo $conn->error;
+                ?>
           
         </div>
 	</div><!--/.container -->
