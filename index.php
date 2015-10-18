@@ -113,7 +113,7 @@
 		</div><!--/.row -->
 		<div class="row">
             <div class="col-lg-12 text-center" id="skillswrap" style="padding:5px;border-radius:3px">
-                <b>Latest Achivments of our Students'</b>
+                <b>News Feed</b>
             </div>
             <div class='col-lg-4' style='margin-top:10px;border-left:2px solid #ffa5c5;'>
                 <t>Grade 4 - funny activities</t><br>
