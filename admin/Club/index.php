@@ -41,30 +41,29 @@
 
 	<div class="container" style="margin-top:-20px">
       
-        <div class="col-lg-12 text-center"><t>Add New Photos</t><hr></div>   
+        <div class="col-lg-12 text-center"><t>Add New Club</t><hr></div>   
         
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <form role="form" action="index.php" method="post" enctype="multipart/form-data"  accept-charset="utf-8" >  
                 <div class="col-lg-6 col-sm-12">
                 <div class="form-group">
-                    <label>Title</label>
-                    <input class="form-control" type="text" name="title" value="">
+                    <label>Club Name</label>
+                    <input class="form-control" type="text" name="c_name" value=""  required>
                 </div>  
-                <div class="form-group">
-                    <label>Date</label>
-                    <input class="form-control" type="date" name="date" value="" >
-                </div>
                 
+               
+                <div class="form-group">
+                    <label>Incharge</label>
+                    <input class="form-control" type="text" name="incharge" value="" required>
+                    </div>
                 <div class="form-group">
                     <label>Upload Images</label>
                     <input type="file"  name="files" id="imgid" multiple/ >
                     <img src="#" alt="your image" id="image" style="width:100px;height:100px;">   
                 </div></div><div class="col-lg-6 col-sm-12">
-                
-                
                 <div class="form-group">
                     <label>Description</label>
-                    <textarea class="form-control" type="text" name="des" value="" rows="15"></textarea>
+                    <textarea class="form-control" type="text" name="des" value="" rows="15" required></textarea>
                 </div>
                 
                 <div class="form-group">
@@ -87,51 +86,37 @@
     })
     </script>
 </html>
-    <?php      
+    <?php 
+
+           
 
         if($_POST){
         
             require '../db/db_connect.php';
-            $conn = connection();       
-            $title     =isset( $_POST['title']) ? $_POST['title'] : "";
-            $date      =isset( $_POST['date']) ? $_POST['date'] : 2010;
-            $des       =isset( $_POST['des']) ? $_POST['des'] : "";
+            $conn = connection();
+        
             
+            $c_name    =isset( $_POST['c_name']) ? $_POST['c_name'] : "";
+            $des       =isset( $_POST['des']) ? $_POST['des'] : "";
+            $incharge      =isset( $_POST['incharge']) ? $_POST['incharge'] : "";
+            
+        
             $image = "";
              if(isset($_FILES['files'] )){  
-               
+    
                 $files = $_FILES['files'];
-                $dir = '../../gallery/img/';
+                $dir = '../../clubs/img/';
                 $image = image_save($dir,$files);
-            
-                $query = "INSERT INTO Gallery(Title,Img_name,Des,Add_date) VALUES('$title','$image','$des','$date')";
-                 if(!$conn->query($query)) echo $conn->error;
-
+             
              }
             
+            $query = "INSERT INTO Clubs(Title,C_img,Description,Incharge) VALUES('$c_name','$image','$des','$incharge')";
             
-            
-//            
-            
-            
+                if($conn->query($query)){
+                    echo "added";
+                }else echo $conn->error;
+               
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     ?>

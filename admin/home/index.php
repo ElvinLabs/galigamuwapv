@@ -39,42 +39,10 @@
     ?>
 
 	<div class="container" style="margin-top:-20px">
-      
-        
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-        
-        
-        
-
-        <form role="form" action="index.php" method="post"  accept-charset="utf-8" >  
-            <div class="form-group">
-                <label>Year</label>
-                <input class="form-control" type="text" name="year" value="" placeholder="eg: 2010" required>
-            </div>  
-            <div class="form-group">
-                <label>Amount</label>
-                <input class="form-control" type="number" name="amount" value="" placeholder="eg: 100" required>
-            </div>
-            <div class="form-group">
-                <label>Pass</label>
-                <input class="form-control" type="number" name="pass" value="" placeholder="eg:20" required>
-            </div>
-            <div class="form-group">
-                <label>Percentage</label>
-                <input class="form-control"  type="text" name="precentage" value="" placeholder="eg: 25%" required>
-            </div>
-            <div class="form-group">
-                <input class="form-control" type="submit" value="Add">
-            </div>
-        </form>
-            
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">       
         </div>
            
     </div>
-	
-	
-	
-	
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -87,48 +55,3 @@
     })
     </script>
 </html>
-    <?php 
-
-           
-        require '../db/db_connect.php';
-        $conn = connection();
-        if($conn) echo "connected";
-        else echo "error";
-
-        if($_POST){
-        
-        
-            
-            $year =isset( $_POST['year']) ? $_POST['year'] : 2000;
-            $amount =isset( $_POST['amount']) ? $_POST['amount'] : 100;
-            $pass =isset( $_POST['pass']) ? $_POST['pass'] : 0;
-            $percentage =isset( $_POST['precentage']) ? $_POST['precentage'] : 0.00;
-            
-            $query = "INSERT INTO EXAM_MARKS(Exam_yr,Amount,Pass,percentage) VALUES('$year','$amount','$pass','$percentage')";
-            
-            if($conn->query($query)){
-                echo "added";
-            }else echo $conn->error;
-            
-            
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ?>

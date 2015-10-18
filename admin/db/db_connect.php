@@ -6,9 +6,9 @@
 
 
 define("HOST","localhost");
-define("DBNAME","galigamuwapv_24533");
+define("DBNAME","galigamuwa_25533");
 define("UNAME","root");
-define("PW","");
+define("PW","root");
 
 
 
