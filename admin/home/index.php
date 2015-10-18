@@ -35,43 +35,37 @@
   <body data-spy="scroll" data-offset="0" data-target="#nav">
 
     <?php
-
         include "../nav.html"
     ?>
 
 	<div class="container" style="margin-top:-20px">
       
         
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
         
         
         
 
-        <form role="form" action="index.php" method="post"  accept-charset="utf-8" > 
-            <div class="col-lg-6 col-sm-12">
-                <div class="form-group">
-                    <label>Year</label>
-                    <input class="form-control" type="text" name="year" value="" placeholder="eg: 2010" required>
-                </div>  
-                <div class="form-group">
-                    <label>Amount</label>
-                    <input class="form-control" type="number" name="amount" value="" placeholder="eg: 100" required>
-                </div>
+        <form role="form" action="index.php" method="post"  accept-charset="utf-8" >  
+            <div class="form-group">
+                <label>Year</label>
+                <input class="form-control" type="text" name="year" value="" placeholder="eg: 2010" required>
+            </div>  
+            <div class="form-group">
+                <label>Amount</label>
+                <input class="form-control" type="number" name="amount" value="" placeholder="eg: 100" required>
             </div>
-                <div class="col-lg-6 col-sm-12">
-                <div class="form-group">
-                    <label>Pass</label>
-                    <input class="form-control" type="number" name="pass" value="" placeholder="eg:20" required>
-                </div>
-                <div class="form-group">
-                    <label>Percentage</label>
-                    <input class="form-control"  type="text" name="precentage" value="" placeholder="eg: 25%" required>
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="submit" value="Add">
-                </div>
+            <div class="form-group">
+                <label>Pass</label>
+                <input class="form-control" type="number" name="pass" value="" placeholder="eg:20" required>
             </div>
-            
+            <div class="form-group">
+                <label>Percentage</label>
+                <input class="form-control"  type="text" name="precentage" value="" placeholder="eg: 25%" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="submit" value="Add">
+            </div>
         </form>
             
         </div>
@@ -98,8 +92,8 @@
            
         require '../db/db_connect.php';
         $conn = connection();
-        //if($conn) echo "connected";
-        //else echo "error";
+        if($conn) echo "connected";
+        else echo "error";
 
         if($_POST){
         
@@ -113,7 +107,7 @@
             $query = "INSERT INTO EXAM_MARKS(Exam_yr,Amount,Pass,percentage) VALUES('$year','$amount','$pass','$percentage')";
             
             if($conn->query($query)){
-                //echo "added";
+                echo "added";
             }else echo $conn->error;
             
             
