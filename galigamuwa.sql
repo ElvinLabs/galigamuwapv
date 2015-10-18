@@ -7,7 +7,7 @@ CREATE TABLE EXAM_MARKS(
     Exam_yr YEAR NOT NULL PRIMARY KEY,
     Amount INT(3) NOT NULL,
     Pass INT(3) NOT NULL,
-    Percentage FLOAT(4) NOT NULL
+    Percentage FLOAT(10,4) NOT NULL
 );
 
 
