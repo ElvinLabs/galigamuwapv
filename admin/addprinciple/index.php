@@ -41,31 +41,24 @@
 
 	<div class="container" style="margin-top:-20px">
       
-        
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        
-        
-        
+        <div class="col-lg-12 text-center"><t>Add Principles</t><hr></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">        
 
         <form role="form" action="index.php" method="post"  accept-charset="utf-8" > 
             <div class="col-lg-6 col-sm-12">
                 <div class="form-group">
-                    <label>Year</label>
+                    <label>Name</label>
                     <input class="form-control" type="text" name="year" value="" placeholder="eg: 2010" required>
                 </div>  
                 <div class="form-group">
-                    <label>Amount</label>
+                    <label>From</label>
                     <input class="form-control" type="number" name="amount" value="" placeholder="eg: 100" required>
                 </div>
             </div>
                 <div class="col-lg-6 col-sm-12">
                 <div class="form-group">
-                    <label>Pass</label>
+                    <label>To</label>
                     <input class="form-control" type="number" name="pass" value="" placeholder="eg:20" required>
-                </div>
-                <div class="form-group">
-                    <label>Percentage</label>
-                    <input class="form-control"  type="text" name="precentage" value="" placeholder="eg: 25%" required>
                 </div>
                 <div class="form-group">
                     <input class="form-control" type="submit" value="Add">
