@@ -57,7 +57,7 @@
             <div class='col-lg-12' style='margin-top:10px;'>
                 <div class="row">
                     <div class="col-lg-8 col-xs-12">
-                        <img src="<?php echo ($row['Img_name']);  ?>" width="100%">
+                        <img src="<?php echo ('img/'.$row['Img_name']);  ?>" width="100%">
                     </div>
                     <div class="col-lg-4 col-xs-12">
                         <p>
